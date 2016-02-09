@@ -1,0 +1,18 @@
+<h2>Bienvenido al sorteador!</h2>
+<p>
+Listado de concursantes
+</p>
+<br><br>
+<div class="row">
+	<div class="col-sm-6">
+	<ul>
+	<li ng-repeat="c in participants">
+	{{c.firstName+" " + c.lastName}}
+	</li>
+	</ul>
+	<a class="btn btn-primary" ng-click="choseWinner()">¡Sortear!</a>
+	</div>
+	<div class="col-sm-6">
+		<h3>{{participants[numberWinner].firstName + " " + participants[numberWinner].lastName}}</h3>
+	</div>
+</div>
